@@ -1,0 +1,84 @@
+
+
+@import "./color";
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+html,body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+
+ul,li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.el-scrollbar {
+    height: 100%;
+    .scrollbar-wrapper {
+        height: calc(100% + 17px);
+        .view-box , .el-menu {
+          height: 100%;
+          border-right: 0;
+        }
+        .svg-icon {
+            margin-right: 16px;
+        }
+    }
+}
+
+.el-table , .el-table th, .el-table tr {
+    background: transparent;
+    color: #fff;
+    font-size: 12px;
+}
+.el-table__body tr:hover>td {
+    background: transparent !important;
+}
+.el-table thead.is-group th {
+    background: transparent;
+}
+.el-pagination {
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+    .el-pagination__total {
+        color: #fff;
+    }
+    input,.btn-prev,.btn-next,.el-pagination__jump {
+        background: transparent !important;
+        color: #fff !important;
+    }
+    
+}
+.el-pager li {
+    background: transparent;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background: #999;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+}
